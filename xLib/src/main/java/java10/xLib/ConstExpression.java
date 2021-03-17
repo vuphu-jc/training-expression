@@ -1,5 +1,6 @@
 package java10.xLib;
 
+import mathnotation.MathNotation;
 
 public class ConstExpression implements Expression {
 
@@ -31,10 +32,11 @@ public class ConstExpression implements Expression {
 		// TODO Auto-generated method stub
 		return new ConstExpression(0);
 	}
-	
+
 	@Override
-	public String toString() {
-		return "0";
+	public String toString(MathNotation mathNotation) {
+		// TODO Auto-generated method stub
+		return  "" + value;
 	}
-	
+
 }

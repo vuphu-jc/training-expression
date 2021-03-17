@@ -2,11 +2,11 @@ package java10.xLib.polynomial;
 
 import java10.xLib.Expression;
 import java10.xLib.PolynomialExpression;
+import mathnotation.MathNotation;
 
 public class AddExpression extends PolynomialExpression {
 
 	public AddExpression() {
-		super();
 	}
 
 	public AddExpression(Expression a, Expression b) {
@@ -25,8 +25,8 @@ public class AddExpression extends PolynomialExpression {
 	}	
 
 	@Override
-	public String toString() {
+	public String toString(MathNotation mathNotation) {
 		// TODO Auto-generated method stub
-		return "";
+		return mathNotation.show("+", a.toString(mathNotation), b.toString(mathNotation));
 	}
 }

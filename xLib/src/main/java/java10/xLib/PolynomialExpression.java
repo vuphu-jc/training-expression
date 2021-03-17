@@ -28,17 +28,5 @@ public abstract class PolynomialExpression implements Expression {
 	public void setB(Expression b) {
 		this.b = b;
 	}
-
-	@Override
-	public abstract double evaluate(double x);
-
-	@Override
-	public abstract Expression derive();
 	
-	@Override
-	public String toString() {
-		return "";
-	}
-	
-
 }
